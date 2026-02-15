@@ -3,7 +3,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 from torch.autograd import Variable
 
-from utils import models, loss
+from utils import models
 
 # OBFNet
 
@@ -200,3 +200,4 @@ if __name__ == "__main__":
     )
 
     test_model(model)
+
