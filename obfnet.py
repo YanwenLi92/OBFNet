@@ -183,7 +183,7 @@ def test_model(model):
 
 
 if __name__ == "__main__":
-    model_origin = OBFNet(
+    model = OBFNet(
         enc_dim      = 64,
         feature_dim  = 64,
         hidden_dim   = 128,
@@ -196,6 +196,7 @@ if __name__ == "__main__":
         micNum       = 4,
         rnn_type     = 'LSTM',
         ref_ch       = 0,
-        Lh           = 512
+        Lh           = 110
     )
-    test_model(model_origin)
+
+    test_model(model)
