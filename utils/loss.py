@@ -48,9 +48,9 @@ def calc_sdr(estimation, origin):
 
 def ReIR_Loss(y_hat, y, all_filter, h_reir, win, context_len):
 
-    # all_filter: B, nmic, num_spk=1, FrmNum, Lh
+    # all_filter: B, nmic, num_spk=1, FrmNum, L; (L: length of IR)
     # y: B, T
-    # h_reir: B,nmic*Lh
+    # h_reir: B,nmic*Lh; (Lh: length of ReIR)
 
     origin = y
     origin_power = torch.pow(origin, 2).sum(1, keepdim=True)  
@@ -88,4 +88,5 @@ def ReIR_Loss(y_hat, y, all_filter, h_reir, win, context_len):
     loss_reir = loss_[vad_mask]
 
     return loss_reir.mean()
+
 
