@@ -1,6 +1,6 @@
 import torch
 import torch.nn.functional as F
-import models
+from . import models
 
 def multi_loss(y_hat, y, all_filter, h_reir, win, context_len):
 
@@ -88,5 +88,6 @@ def ReIR_Loss(y_hat, y, all_filter, h_reir, win, context_len):
     loss_reir = loss_[vad_mask]
 
     return loss_reir.mean()
+
 
 
