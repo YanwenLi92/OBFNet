@@ -39,9 +39,9 @@ If you find this work useful, please cite:
   journal={IEEE Transactions on Audio, Speech and Language Processing}, 
   title={OBFNet: A Neural Beamforming Network Using Orthonormal Basis Functions}, 
   year={2026},
-  volume={},
+  volume={34},
   number={},
-  pages={1-16},
+  pages={1342-1357},
   doi={10.1109/TASLPRO.2026.3664168}}
 
 ```
